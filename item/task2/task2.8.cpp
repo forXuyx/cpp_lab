@@ -28,5 +28,6 @@ int main()
 {
     Person *p = new Person("xyx", 12);
     delete p;
+	cout << "vim初始化完成" << endl;
     return 0;
 }
