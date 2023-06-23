@@ -8,6 +8,16 @@ using namespace std;
 class Base
 {
 public:
+    Base()
+    {
+        cout << "base" << endl;
+    }
+
+    ~Base()
+    {
+        cout << "base" << endl;
+    }
+public:
     int m_A;
 protected:
     int m_B;
@@ -17,6 +27,15 @@ private:
 
 class Son :public Base
 {
+public:
+    Son()
+    {
+        cout << "son" << endl;
+    }
+    ~Son()
+    {
+        cout << "son" << endl;
+    }
 public:
     int m_D;
 };
