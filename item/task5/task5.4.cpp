@@ -15,7 +15,17 @@ public:
     }
 };
 
-class Son :public Base
+class Base1
+{
+public:
+    int m_B;
+    Base1()
+    {
+        m_B = 100;
+    }
+};
+
+class Son :public Base, public Base1
 {
 public:
     int m_A;
